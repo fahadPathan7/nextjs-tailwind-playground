@@ -28,9 +28,17 @@ to create a tailwind.config.js file.
 
 **👉 link the html files in tailwind.config.js file**
 ```js
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
     './pages/*.html',
   ],
+  darkMode: "media", // or 'media' or 'class
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
 ```
 
 **👉 file structure**

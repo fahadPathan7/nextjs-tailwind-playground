@@ -4,7 +4,7 @@ This is a simple project to play around with Next.js and Tailwind CSS.
 </div>
 
 ## 🚀 Next.js playground
-[Next.js Playground](./next_playground/README.md)
+[Next.js Playground](./next_playground)
 
 ## 🚀 Tailwind CSS playground
-[Tailwind CSS Playground](./tailwind_playground/README.md)
+[Tailwind CSS Playground](./tailwind_playground)
