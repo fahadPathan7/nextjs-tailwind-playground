@@ -19,6 +19,13 @@
 /* layer utilities is used to define custom classes */
 @layer utilities {
     .text-shadow {
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+}
+
+/* for custom variants. (these will be used like hover:roate-90) */
+@variants hover, focus, active {
+    .rotate-90 {
+        transform: rotate(90deg);
     }
 }

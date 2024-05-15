@@ -718,6 +718,11 @@ h1 {
   color: rgb(168 85 247 / var(--tw-text-opacity));
 }
 
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -734,11 +739,22 @@ h1 {
   transition-duration: 500ms;
 }
 
+.text-shadow {
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
 /* group utilities */
 
 /* layer base is used to define the base styles */
 
 /* layer utilities is used to define custom classes */
+
+/* for custom variants. (these will be used like hover:roate-90) */
+
+.hover\:rotate-90:hover {
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
@@ -758,6 +774,10 @@ h1 {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:rotate-90:hover {
+  transform: rotate(90deg);
 }
 
 .focus\:outline-none:focus {
